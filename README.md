@@ -10,7 +10,7 @@ There are four types of toast available with this package.<br><br>
 `3. Toaster.error(msg)`<br>
 `4. Toaster.info(msg)`<br>
 
-<img src="bg.jpg" align="left"  />
+<img src="bg.jpeg" align="left"  />
 
 
 ## Install
