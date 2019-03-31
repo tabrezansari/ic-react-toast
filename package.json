@@ -1,15 +1,15 @@
 {
-  "name": "ic-react-alert",
-  "version": "1.0.4",
-  "description": "A react alert package for react apps",
-  "main": "lib/Alert.js",
+  "name": "ic-react-toast",
+  "version": "1.0.1",
+  "description": "A react toast notification library  package for react applications.",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --colors --p",
-    "transpile": "node_modules/.bin/babel ./src/Alert.js --babel-preset-es2015 --out-file lib/Alert.js"
+    "transpile": "node_modules/.bin/babel ./src/index.js --babel-preset-es2015 --out-file lib/index.js"
   },
   "author": "Tabrez Ansari",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

@@ -1,37 +1,41 @@
-# ic-react-alert
+# ic-react-toast
 
 
-## Introductiosn
+## Introduction
 
-`ic-react-alert` is a alert library for react applications. There is a `show` prop available for toggling alert component's visibility.
-And `onConfirm` and `onCancel` props allow you have  control over alert component events.
+`ic-react-toast` is a toast notification  library for react applications.<br><br>
+There are four types of toast available with this package.<br><br>
+`1. Toaster.success(msg)`<br>
+`2. Toaster.warning(msg)`<br>
+`3. Toaster.error(msg)`<br>
+`4. Toaster.info(msg)`<br>
+
+<img src="bg.jpg" align="left"  />
+
 
 ## Install
 
 ```
-$ npm install ic-react-alert
+$ npm install ic-react-toast
 ```
 
 ## Usage
 
 ```js
 import React, { Component } from 'react';
-import Alert from 'ic-react-alert';
+import {ToastContainer,Toaster} from 'ic-react-toast';
 
 // ...
 
 render() {
   return (
     <div>
-      <button onClick={() => this.setState({ show: true })}>Alert</button>
-      <Alert
-        show={this.state.show}
-        title="Demo"
-        type="confirm"
-        content="Alert in React"
-        onConfirm={() => console.log("Confirmed")}
-        onCancel={() => this.setState({show:false})}
-      />
+      <button onClick={() => Toaster.success('Yay!!! You did it')}>Toast</button>
+      <button onClick={() => Toaster.warning('Wrong credential detected.')}>Toast</button>
+      <button onClick={() => Toaster.error('Cannot post data')}>Toast</button>
+      <button onClick={() => Toaster.info('login to start hacking.')}>Toast</button>
+      
+      <ToastContainer />
     </div>
   );
 }
